@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <title>ProNear</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+        <style>
+
+            @font-face {
+                font-family: CustomFont;
+                src: url("http://www.pronear.co/piyush/FontNexaBold.otf") format("opentype");
+            }
+            .logoAT{
+
+                background-color: rgb(255,255,255);
+                background-image: url("http://www.pronear.co/piyush/animated_logo.gif");
+                background-position-x: 5%;
+                background-size: 200px;
+                background-position: left;
+                background-repeat: no-repeat;
+                /*margin: -20px;*/
+                height: 70px;
+                line-height: 70%;
+                font-family: CustomFont;        
+            }
+
+            .backImageHome
+            {
+                background-image: url("http://www.pronear.co/images/background1.jpg");
+                /*min-height: 100%;*/
+                height: 100%;
+                background-repeat: no-repeat;
+                /*                background-attachment: fixed;*/
+                background-position: center;
+                background-size: cover;
+                color: black;
+                font-family: CustomFont;
+                /*font-family: 'Source Sans Pro', sans-serif;*/
+            }
+
+            .button{
+
+                /*                border: 2px solid rgb(35,128,181);
+                                padding: 10px 40px; 
+                                background: rgb(35,128,181);
+                                width: 300px;
+                                border-radius: 25px;*/
+            }
+
+            .button1{
+                background-color: rgb(35,128,181);
+                width: 200px;
+                color: white;
+                height: 40px;
+                font-size: large;
+                /*font-family: CustomFont;*/
+            }
+
+            .button2{
+                background-color: rgb(237,108,19);
+                width: 200px;
+                color: white;
+                height: 40px;
+                font-size: large;
+            }
+
+            .buttonApple{
+                /*background-color: rgb(35,128,181);*/
+                background-image: url("http://www.pronear.co/piyush/logo-app_store.png");
+                width: 200px;
+                color: white;
+                height: 40px;
+                font-size: 0;
+                /*font-family: CustomFont;*/
+            }
+
+            .buttonAndroid{
+                /*background-color: rgb(237,108,19);*/
+                background-image: url("http://www.pronear.co/piyush/Google-Play-Transparent-border.png");
+                width: 200px;
+                color: white;
+                height: 40px;
+                font-size: 0;
+            }
+
+            .back { 
+                background: url("../HirePro/images/background1.jpg") no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            .sometext{
+                z-index: 100;
+                position: absolute;
+                color: black;
+                font-size: 24px;
+                font-weight: bold;
+                /*left: 150px;*/
+                width: 100%;
+                margin-top: 10%;
+                align-content: center;
+            }
+            .footer1{
+                background-color: rgb(237,108,19);
+                /*position: absolute;*/
+                color: white;
+                width: 100%;
+                /*top: 165%;*/
+                
+            }
+            .footer{
+                background-color: rgb(35,128,181);
+                /*position: absolute;*/
+                color: white;
+                width: 100%;
+                /*top: 179%;*/
+                
+            }
+			
+			 .fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('images/video1.mp4') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+            }
+			}
+#overlay {
+    display:none;    
+    position:fixed;  
+    left:0px;        
+    top:0px;         
+    width:100%;      
+    height:100%;     
+    background:#000; 
+    opacity:0.5;     
+    z-index:99999;   
+}
+
+#popup {
+    display:none;
+    position:fixed;
+    right: 0%;        
+    top:10%;         
+    width:300px;     
+    height:100%;
+    margin-top:-75px;
+    margin-left:-150px;
+    background:#000000;
+    border:2px solid #000;
+    z-index:100000;      
+}
+
+
+        </style>
+
+    </head>
+    
+    <body style="margin: 0px;">
+	<script>
+            
+        var url = document.location.href;
+    
+     if( url.indexOf('?') > -1){
+        
+    }else{
+         window.location.href="http://www.pronear.co/Login.html"
+    }
+
+        </script>
+	        <div id="overlay"></div>
+<div id="popup">
+            &nbsp;    
+    
+    <img src="piyush/close.jpg" style="width: 80px;height: 60px; float:right; margin-top:10px;" id="image2"  />
+    <div>
+        &nbsp;
+        
+    </div>
+            <ul style="color: white; padding-left: 30%;list-style: none; float: left;">
+        <li> <label >I Am A Pro</label></li>
+        <li> <label >Hire A Pro</label></li>
+        <li> <label >About Us</label></li>
+                            
+                </ul>
+    
+</div>
+       
+            
+            <!--<button id="c-button--slide-right" class="c-button">Slide Right</button>-->
+            
+        <div class="logoAT">
+            &nbsp;
+        <!--    <div id="o-wrapper" class="o-wrapper" >
+                <button type="button" id="c-button--slide-right" role="button" aria-label="Toggle Navigation" class="grid-button rearrange" style="position: absolute; z-index: 100;left: 1200px">
+          <span class="grid"></span>
+        </button>
+            </div> -->
+			
+			 <img src="http://www.pronear.co/piyush/open.jpg" style="width: 80px;height: 60px; float:right; margin-top:7px;" id="image1"  />
+<!--            <h3 style="color: black;text-align: right; position: relative;  padding-right: 5%;">
+                &emsp;&emsp;  <a style="color: black;text-decoration: none;" href="../HirePro/CustomerSignUp.jsp">HIRE A PRO</a>
+                &emsp;&emsp;  <a style="color: black;text-decoration: none;" href="../HirePro/ProSignUp.jsp">I AM A PRO</a></h3> -->
+        </div>
+            
+          
+          <!-- /c-menu push-right -->
+
+        
+		
+		<!-- <div class="backImageHome"> -->
+        
+
+<div class="fullscreen-bg">
+    <video loop muted autoplay poster="http://www.pronear.co/piyush/background1.jpg" class="fullscreen-bg__video">
+        <!--<source src="images/video1.mp4" type="video/webm">-->
+        <source src="http://www.pronear.co/piyush/video1.mp4" type="video/mp4">
+        <!--<source src="video/big_buck_bunny.ogv" type="video/ogg">-->
+    </video>
+</div>		
+            <div >
+                <div style="padding-top:  10%;"><h1 style="text-align: center;font-size: 60px; color: #000000;"> Get things done</h1></div>
+
+                <h3 style="text-align: center;color: #000000;margin-top: -2%;"><strong>Get everything you want in life and more.</strong></h3>
+                <div style="text-align: center;">
+                    <input type="button"  class="button1"  onclick="window.location = 'http://www.pronear.co/CustomerSignUp.html'" value="HIRE A PRO" />                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <input type="button"  class="button2"  onclick="window.location = 'http://www.pronear.co/ProSignUp.html'" value="I AM A PRO" />
+                </div>
+                <div style="padding-bottom: 50%">
+                    &emsp;
+                    
+                </div>
+            </div>
+        <!--</div> -->
+        <div class="footer1">
+            <div>
+                &emsp;
+            </div>
+            <div style="margin-left: 33%;">
+                <img align="top" src="piyush/Facebook-Icon.png" height="40" width="42" alt="" />
+                &emsp;
+                <img src="piyush/linkedin.png" height="35" width="35" alt=""/>
+                &emsp;
+                <img src="piyush/twitter-logo-1024x1024.png" height="35" width="35" alt=""/>
+                &emsp;
+                <img src="piyush/Pinterest1.png" height="35" width="35" alt=""/>
+                <img src="piyush/snapchat-logo-141-1.png" height="50" width="67" alt=""/>
+                <img src="piyush/instagram_app_large_may2016.png" height="35" width="35" alt=""/>
+                &emsp;
+                <img src="piyush/1468318161_youtube-256.png" height="40" width="40" alt=""/>
+
+            </div>
+            <div>
+                &emsp;
+            </div>
+        </div>
+        <div class="footer">
+
+            <div>    
+                <ul  style="margin-left: 4%; list-style: none; float: left;">
+                    <li > <label >I am a Pro</label></li>
+                    <li>Create a Profile</li>
+                    <li>Get Hired</li>
+                    <li>Edit Profile</li>
+                </ul>
+
+                <ul style="padding-left: 31%;list-style: none; float: left;">
+                    <li> <label >Hire a Pro</label></li>
+                    <li><label >Find a Pro</label></li>
+                    <li><label >Available Pros</label></li>
+                    <li>My Projects</li>
+                </ul>
+
+                <ul style="padding-left: 30%;list-style: none; float: left;">
+                    <li> <label >About Us</label></li>
+                    <li><label >Our Story</label></li>
+                    <li><label >Team</label></li>
+                    <li>Jobs</li>        
+                </ul>
+
+            </div> 
+
+
+            <div style="text-align: center;">
+                <a href="default.asp">
+                    <img src="http://www.pronear.co/piyush/logo-app_store.png" alt="HTML tutorial" style="width:200px;height:50px;border:0;"></a>    
+
+                <!--<button class="buttonApple"  onclick="window.location = '../HirePro/CustomerSignUp.jsp'"></button>-->
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <a href="default.asp">
+                    <img src="http://www.pronear.co/piyush/GooglePlayBadge.png" alt="HTML tutorial" style="width:200px;height:50px;border:0;">
+                </a>            </div>
+            <div>
+                &emsp;
+            </div>
+            
+            <div>
+                <label style="margin-left: 4%">  © 2017 ProNear Inc.</label> <label style="float:right;margin-right: 4%;">  Privacy Policy Terms & Conditions</label>     
+            </div>
+            <div>
+                &emsp;
+            </div>
+        </div>
+      <!--      <div id="c-mask" class="c-mask"></div>
+          <nav id="c-menu--slide-right" class="c-menu c-menu--slide-right" >
+  <button class="c-menu__close">Close Menu &rarr;</button>
+  <ul class="c-menu__items">
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+    <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+  </ul>
+</nav>     -->
+        
+		<script>
+		
+		            function diffImage(img) 
+{
+    
+   if(img.src.match("http://www.pronear.co/piyush/open.jpg")) img.src = "http://www.pronear.co/piyush/close.jpg";
+   else img.src = "http://www.pronear.co/piyush/open.jpg";
+}
+		
+    var anchor = document.querySelectorAll('button');
+    
+    [].forEach.call(anchor, function(anchor){
+      var open = false;
+      anchor.onclick = function(event){
+        event.preventDefault();
+        if(!open){
+          this.classList.add('close');
+          open = true;
+        }
+        else{
+          this.classList.remove('close');
+          open = false;
+        }
+      }
+    }); 
+  </script>
+  
+  <script>
+   window.onload = function() {
+  document.getElementById("image1").onclick = function(){
+        var overlay = document.getElementById("overlay");
+        var popup = document.getElementById("popup");
+        overlay.style.display = "block";
+        popup.style.display = "block";
+    };
+    
+  document.getElementById("image2").onclick = function(){
+        var overlay = document.getElementById("overlay");
+        var popup = document.getElementById("popup");
+        overlay.style.display = "none";
+        popup.style.display = "none";      
+  }
+};
+      </script>
+    </body>
+</html>

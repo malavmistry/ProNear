@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ProNear</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  <style>
+  .logoAT{
+				position:fixed;
+                background-color: rgb(237,108,19);
+                background-image: url("/piyush/ProNearWO.png"); 
+             /*  background-position-x: 5%; */
+                background-size: 200px;
+                background-position: left;
+                background-repeat: no-repeat;
+				
+                margin-top: -60px;
+                margin-left: -60px;
+				height: 70px;
+				width: 100%;
+              /*  line-height: 70%; */
+                font-family: CustomFont;        
+            }
+			
+			 .button1{
+                background-color: transparent;
+                width: 200px;
+                color: rgb(237,108,19);
+                height: 40px;
+                font-size: large;
+                /*font-family: CustomFont;*/
+            }
+
+            .button2{
+                background-color: rgb(237,108,19);
+                width: 200px;
+                color: white;
+                height: 40px;
+                font-size: large;
+            }
+			
+			 .fullscreen-bg {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                overflow: hidden;
+                z-index: -100;
+            }
+
+            .fullscreen-bg__video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: auto;
+                height: auto;
+                min-width: 100%;
+                min-height: 100%;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            @media (max-width: 767px) {
+                .fullscreen-bg {
+                    background: url('/piyush/video1.mp4') center center / cover no-repeat;
+                }
+
+                .fullscreen-bg__video {
+                    display: none;
+
+                }
+            }
+
+  </style>
+</head>
+
+<body > 
+   <div class="logoAT">
+            
+			
+<div  class="open" style="margin-top:-35px;">
+	<span class="cls"></span>
+	<span>
+		<ul class="sub-menu ">
+			<li>
+				<a href="#about" title="HirePro">Hire a Pro</a>
+			</li>
+			<li>
+				<a href="#skills" title="IamPro">I am a Pro</a>
+			</li>
+			<li>
+				<a href="#jobs" title="About">About</a>
+			</li>
+			<li>
+				<a href="#contact" title="survey">Survey</a>
+			</li>
+		</ul>
+	</span>
+	<span class="cls"></span>
+</div>
+</div>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+ <div class="fullscreen-bg">
+            <video loop muted autoplay poster="/piyush/background1.jpg" class="fullscreen-bg__video">
+                <!--<source src="images/video1.mp4" type="video/webm">-->
+                <source src="/piyush/video1.mp4" type="video/mp4">
+                <!--<source src="video/big_buck_bunny.ogv" type="video/ogg">-->
+            </video>
+        </div>
+		<div >
+            <div style="padding-top:  5%;"><h1 style="text-align: center;font-size: 100px; color: #FFFFFF;"> ProNear</h1></div>
+
+            <h2 style="text-align: center; color: #FFFFFF; margin-top: -10%;">We are building a better future for you</h2>
+            
+			<div style=" ">
+				<img src="/images/check.png" height="80" width="80" style="float:left;margin-left:24%;" /> 
+				<div style="margin-left:-30px; margin-top:45px; float:left;"> <label  > Work when you want</label> </div>
+				
+				<img src="/images/check.png" height="80" width="80" style="float:left;margin-left:5%;" /> 
+				<div style="margin-left:-30px; margin-top:45px; float:left;"> <label  > Marketing tools</label> </div>
+				
+				<img src="/images/check.png" height="80" width="80" style="float:left;margin-left:5%;" /> 
+				<div style="margin-left:-30px; margin-top:45px; float:left;"> <label  > More customers</label> </div>
+			</div>
+			<div style="text-align: center; float:none;margin-top:10%;">
+                <input type="button"  class="button1"  onclick="window.location = '../HirePro/CustomerSignUp.jsp'" value="HIRE A PRO" />                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <input type="button"  class="button2"  onclick="window.location = 'Survey.html'" value="I AM A PRO" />
+            </div>
+        </div>
+		
+		
+</body>
+</html>

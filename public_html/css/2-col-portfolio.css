@@ -1,0 +1,166 @@
+html {
+  box-sizing: border-box;
+  font-family: HelveticaNeue;
+}
+
+h1{
+    text-align: center;
+    color:#0c4e72;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+      font-family: HelveticaNeue;
+}
+
+h2{
+    text-align: center;
+    color:#0c4e72;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: lighter;
+      font-family: HelveticaNeue;
+}
+
+p{
+    text-align: center;
+    align-content: center;
+    width:99%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: lighter; 
+    color: #0c4e72;
+    font-family: HelveticaNeue;
+    }
+
+@media screen and (min-widht:500px){
+    .button-form{
+        padding:3% 30% 3% 30%;
+    }
+}
+
+#giglii_head{
+        padding-bottom: 5%;
+        text-align: center;
+        height:auto;
+        }
+
+
+        #form-div {
+        box-shadow:0 1px 2px 1.5px rgba(0, 0, 0, 0.2);
+        background-color:#fff;
+        margin-top:8%;
+        width:100%;
+        height:auto;
+        padding: 0% 1% 0% 1%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        }
+
+        #form-div h1{
+            text-align:left;
+            font-family: HelveticaNeue ;
+            font-weight: bold;
+            margin-top: 3%;
+        }
+
+        #form-div h2{
+            margin-top: 0%;
+            text-align: left;
+            font-weight: lighter;
+        }
+        @media screen and (min-width:500px){
+
+         #form-div {
+        box-shadow: 0 2px 4px 3px rgba(0, 0, 0, 0.2);
+         }   
+            
+        #form-div h2{
+        }            
+        }
+        
+        .form p{
+        }
+
+        .feedback-input {
+        color: #4a4a4a;
+        font: HelveticaNeue;
+        margin-top: 0%;
+        border:0.05px solid #cccccc;
+        border-radius: 0.5rem;
+        padding: 2% 2% 2% 2%;
+        width:100%;
+        height:auto;
+        font-family: HelveticaNeue;
+        font-style: italic;
+        letter-spacing: -0.3px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        }
+
+        @media screen and (max-width: 500px){
+        .feedback-input{
+        padding: 2% 2% 0% 2%;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border: 0.5px solid grey;
+        }
+        }
+
+        .feedback-input:focus{
+        background: #fff;
+        box-shadow: 0;
+        outline: none;
+        }
+
+        #form-div textarea{
+        width: 100%;
+        height: auto;
+        min-height: 45px;
+        line-height: 150%;
+        resize: vertical;
+        text-align:justify;
+        font-family: HelveticaNeue;
+        font-weight: 300;
+        font-style: italic;
+        color: #4a4a4a;
+        letter-spacing: -0.3px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+
+        input:hover, textarea:hover,
+        input:focus, textarea:focus {
+        background-color:#fff;
+        outline: none;
+        }
+        
+        .submit{
+            padding-top:3%;
+        }
+        
+        .button-form{
+        align-self: center;
+        padding:2.2% 23% 2.2% 23%;
+        text-decoration: none;
+        margin-top:0%;
+        cursor:pointer;
+        border-width:0rem;
+        background-color: #7be0ad;
+        color:#fff;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        -moz-border-radius: 1px;
+        -webkit-border-radius: 1px;
+}
+
+.button-form:hover {
+        text-decoration: none;
+        background-color: #7be0ad;
+        color:#fff;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script>
+            
+            function login(){
+                
+             if(document.getElementById("uname").value === "pronearapp" && document.getElementById("pword").value === "project5"){
+               window.location.href="/Home.html?name=pronearapp"  
+             }
+        }
+        </script> 
+    </head>
+    <body style="margin-top: 5%;margin-left: 25%;">
+        <img src="piyush/animated_logo.gif" alt=""/>
+        <div style="margin-left: 17%;" id="login">
+        
+        <div>
+            <label> Username </label>    <input  type="text"  size="20"  value="" id="uname" />
+        </div>
+        <div> &nbsp;</div>
+        <div>
+            <label> Password </label> <input type="password" size="20" style="margin-left: 2px;" value="" id="pword" />
+        </div>
+        <div> &nbsp;</div>
+        <button style="margin-left: 12%;" value="Login" onclick="login();">
+            Login
+        </button>
+        </div>
+    </body>
+</html>

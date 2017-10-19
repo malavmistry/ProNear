@@ -1,0 +1,576 @@
+html {
+  box-sizing: border-box;
+  font-size: 7px;
+  font-weight: normal;
+  font-family: HelveticaNeue;
+}
+body{
+    margin:0px;
+    padding:0px;
+      font-family: HelveticaNeue;
+}
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color:#0c4e72;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+      font-family: HelveticaNeue;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.7rem; 
+    color:#0c4e72;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: lighter;
+      font-family: HelveticaNeue;
+}
+
+p{
+    text-align: center;
+    align-content: center;
+    width:99%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3rem;
+    font-weight: lighter; 
+    color: #0c4e72;
+    font-family: HelveticaNeue;
+    }
+
+.button1{
+        background-color: transparent;
+        background-attachment: fixed;
+        cursor: pointer;
+        border-width: 0.2rem;
+        border-color: #0099ff;
+        color: #0099ff;
+        width: auto;
+        height: auto;
+        font-size: 1.6rem;
+        padding:1.5% 3.5% 1.5% 3.5%;
+        cursor: pointer;
+          font-family: HelveticaNeue;
+        }
+
+.button1:hover {
+  text-decoration: none;
+}
+
+.button2{
+        background-color: #7be0ad;
+        cursor: pointer;
+        border-width:0rem;
+        color: white;
+        width: auto;
+        height: auto;
+        font-size: 1.6rem;
+        cursor: pointer;
+        padding:3.3% 23%;
+        padding:2.3% 4%;
+        text-decoration: none;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+          font-family: HelveticaNeue;
+      }
+
+.button2:hover {
+        text-decoration: none;
+        background-color: #7be0ad;
+}
+
+.button3{
+	display:block;
+        background-color: #7be0ad;
+	text-align:right;
+        cursor: pointer;
+        border-width:0rem;
+	width:auto;
+        color: white;
+        font-size: 1.6rem;
+        cursor: pointer;
+        padding:1%;
+        text-decoration: none;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+          font-family: HelveticaNeue;
+      }
+
+.button3:hover {
+        text-decoration: none;
+        background-color: #7be0ad;
+}
+
+@media screen and (min-widht:500px){
+    .button-form{
+        padding:3% 30% 3% 30%;
+    }
+}
+
+#side-image{
+position: absolute;
+display:block;
+height:auto;
+width:20%;
+min-width:110px;
+max-width: 815px;
+float: left; 
+left:2%;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0);
+top:-30%;
+z-index: 10;
+}
+
+#giglii_head{
+        display: block;
+        float: left;
+        padding-top: 9%;
+        width:52%; 
+        height:auto;
+        margin-left: -2%;
+        vertical-align: central;
+        }
+        
+        #pronear_logo{
+        width: 53.75%;
+        }
+        
+        #giglii_logo{
+        width: 40%;
+        }
+
+        #giglii_head h1{
+            font-size: 2.5rem;
+        }
+        
+        #giglii_head h2{
+            font-size: 1.2rem;
+        }
+
+        #form-div {
+        box-shadow:0 1px 2px 1.5px rgba(0, 0, 0, 0.2);
+        background-color:#fff;
+        margin-top:0%;
+        width: 35.5%;
+        padding: 0% 1% 0% 1%;
+        float: right;
+        margin-right: 4%;
+        position: inherit;
+        border-radius: 5px;
+        }
+
+        #form-div h1{
+            position: inherit;
+            float: top;
+            text-align:left;
+            font-family: HelveticaNeue ;
+            font-size:2.4rem;
+            font-weight: bold;
+            margin-top: 3%;
+        }
+
+        #form-div h2{
+            margin-top: -5%;
+            text-align: left;
+            font-size: 1.2rem;
+            font-weight: lighter;
+        }
+        
+        .form p{
+        font-size:0.9rem;
+        }
+
+        .feedback-input {
+        color: #4a4a4a;
+        font: HelveticaNeue;
+        font-size: 1.0rem;
+        margin-top: -3%;
+        border:0.05px solid #cccccc;
+        border-radius: 0.5rem;
+        padding: 2% 2% 2% 2%;
+        width:100%;
+        height:auto;
+        font-family: HelveticaNeue;
+        font-style: italic;
+        letter-spacing: -0.3px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        }
+        
+        .feedback-input:focus{
+        background: #fff;
+        box-shadow: 0;
+        outline: none;
+        }
+
+        #form-div textarea{
+        width: 100%;
+        height: auto;
+        min-height: 45px;
+        padding: 2% 2%;
+        line-height: 150%;
+        resize: vertical;
+        text-align:justify;
+        font-size: 1.1rem;
+        font-family: HelveticaNeue;
+        font-weight: 300;
+        font-style: italic;
+        color: #4a4a4a;
+        letter-spacing: -0.3px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+
+        input:hover, textarea:hover,
+        input:focus, textarea:focus {
+        background-color:#fff;
+        outline: none;
+        }
+        
+        .button-form{
+        align-self: center;
+        padding:3% 23%;
+        text-decoration: none;
+        width:100%;
+        margin-top:0%;
+        cursor:pointer;
+        border-width:0rem;
+        background-color: #7be0ad;
+        color:#fff;
+        font-size:1.1rem;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        }
+
+        .button-form:hover {
+        text-decoration: none;
+        background-color: #7be0ad;
+        }
+        
+        .submit{
+            padding-top:3%;
+            margin-bottom: -3%;
+        }        
+
+        
+        @media screen and (max-width:500px){
+        #giglii_head{
+        display: block;
+        float: none;
+        padding-top: 9%;
+        width:85%; 
+        height:auto;
+        margin-left:auto;
+        margin-right: auto;
+        vertical-align: central;
+        }
+
+        #giglii_logo{
+        width:85%;
+        
+        }
+        
+        #giglii_head h1{
+            font-size: 3.8rem;
+        }
+        
+        #giglii_head h2{
+            font-size: 1.9rem;
+            font-weight: medium;
+        }
+        
+        #form-div {
+        box-shadow:0 1px 2px 1.5px rgba(0, 0, 0, 0.2);
+        background-color:#fff;
+        margin-top:5%;
+        margin-left:auto;
+        margin-right: auto;
+        width: 80%;
+        padding: 0% 1% 0% 1%;
+        float: none;
+        position: inherit;
+        border-radius: 5px;
+        }
+        .feedback-input{
+        padding: 2% 2%;
+        -moz-border-radius: 2px;
+        margin-top: -1%;
+        font-size: 2.2rem;
+        -webkit-border-radius: 2px;
+        border: 0.5px solid grey;
+        }
+        
+        #form-div h1{
+            font-size:3.2rem;
+        }
+
+        #form-div h2{
+            font-size:2.4rem;
+        }
+
+        #form-div textarea{
+            font-size: 2.2rem;
+        }
+        
+        .button-form{
+            font-size: 2.2rem;
+        }
+        
+        .submit{
+            padding-top:3%;
+            margin-bottom: -1.5%;
+        }        
+        }
+        
+        @media screen and (min-width:500px){
+
+         #form-div {
+        box-shadow: 0 2px 4px 3px rgba(0, 0, 0, 0.2);
+         } 
+         
+        #form-div h2{
+            margin-top: -8%;
+        }
+        
+        }
+                
+        .page2-content{
+            margin-top:  0%;
+            margin-left:0.5%;
+            text-align:center;
+            align-content: center
+        }
+        
+        .page2-content h1{
+            color:#0c4e72;
+            padding-top: 5%;
+            margin-left:15%;
+            margin-right:15%
+        }
+
+        .page2-content h2{
+            color:#0c4e72;
+            font-weight: bold;
+            letter-spacing: -0.5px;
+            
+        }
+
+        .page2-content p{
+            color:#0c4e72;
+            width: 85%;
+        }
+        @media screen and (min-width:500px){
+        .page2-content h2{
+            letter-spacing: -1.5px;
+            
+        }
+
+        .page2-content p{
+            width: 75%;
+        }    
+        }
+        .page3 h1 {
+            text-align:center;
+            color:#0c4e72;
+            margin:5%;
+        }
+        
+        .page3 h2{
+            text-align:left;
+            color:#0c4e72;
+            font-weight: bold;
+        }
+        .page3 p{
+            text-align:left;
+            color:#0c4e72;
+            margin-top: -2%;
+        }
+        
+@media screen and (min-width: 350px){
+#side-image{
+}
+
+#giglii_head{
+    
+    }
+
+    #form-div {
+
+        }
+}
+
+@media screen and (min-width: 375px){
+      html{
+    font-size: 8px;
+  }
+  #side-image{
+      width: 22%;
+}
+}
+
+@media screen and (min-width: 400px){
+      html{
+    font-size: 9px;
+  }
+#side-image{
+width: 25%;
+}
+}
+
+@media screen and (min-width: 450px){
+      html{
+    font-size: 9px;
+  }
+#side-image{
+}
+#giglii_head{
+
+    }
+
+    #form-div {
+
+        }
+}
+
+@media screen and (min-width: 500px){
+      html{
+    font-size: 10px;
+  }
+#side-image{
+}
+
+    #giglii_head{
+
+    }
+
+    #form-div {
+            
+        }
+}
+@media screen and (min-width: 570px){
+
+}
+@media screen and (min-width: 620px){
+      html{
+    font-size: 11px;
+  }
+
+#side-image{
+}
+  
+  .button2{
+      padding:1.3% 3% 1.3% 3%;
+  }
+
+}
+@media screen and (min-width: 680px){
+#side-image{
+}
+
+}
+@media screen and (min-width: 720px){
+      html{
+    font-size: 12px;
+  }
+#giglii_head{
+
+    }
+
+    #form-div {
+            
+        }
+        
+        #side-image{
+}
+}
+@media screen and (min-width: 800px){
+#side-image{
+}
+
+#giglii_head{
+
+    }
+
+    #form-div {
+            
+        }
+}
+@media screen and (min-width: 860px){
+  html{
+    font-size: 13px;
+  }
+
+#side-image{
+}
+}
+@media screen and (min-width: 920px){
+  html{
+    font-size: 14px;
+  }
+  #side-image{
+}
+}
+@media screen and (min-width: 1000px){
+  html{
+    font-size: 15px;
+  }
+
+#side-image{
+}
+}
+@media screen and (min-width: 1075px){
+  html{
+    font-size: 16px;
+  }
+#side-image{
+}
+}
+
+@media screen and (min-width: 1150px){
+  html{
+    font-size: 17px;
+  } 
+#side-image{
+}
+}
+@media screen and (min-width: 1200px){
+  html{
+    font-size: 18px;
+  }
+#side-image{
+}
+  
+}
+
+@media screen and (min-width: 1250px){
+  html{
+    font-size: 19px;
+  }  
+  
+  #side-image{
+  }
+}
+
+@media screen and (min-width: 1350px){
+  html{
+    font-size: 20px;
+  } 
+}
+@media screen and (min-width: 1500px){
+  html{
+    font-size: 21px;
+  }
+
+#side-image{
+}
+}

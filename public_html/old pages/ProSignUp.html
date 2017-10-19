@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Pro SignUp</title>
+        <style>
+            
+            body{
+                font-family: CustomFont;
+                
+            }
+            .backImagePro
+            {
+                background-image: url("http://www.pronear.co/piyush/TheExperts.png");
+                min-height: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+            
+             @font-face {
+                font-family: CustomFont;
+                src: url("http://www.pronear.co/piyush/FontNexaBold.otf") format("opentype");
+            }
+            .logoAT{
+
+                background-color: rgb(255,255,255);
+                background-image: url("http://www.pronear.co/piyush/animated_logo.gif");
+                background-position-x: 5%;
+                background-size: 200px;
+                background-position: left;
+                background-repeat: no-repeat;
+                border-bottom: #000;
+                border-bottom-style: solid;
+                /*margin: -20px;*/
+                height: 70px;
+                line-height: 70%;
+                font-family: CustomFont;        
+            }
+.footer1{
+                background-color: rgb(237,108,19);
+                /*position: absolute;*/
+                color: white;
+                width: 100%;
+                /*top: 165%;*/
+                
+            }
+            .footer{
+                background-color: rgb(35,128,181);
+                /*position: absolute;*/
+                color: white;
+                width: 100%;
+                /*top: 179%;*/
+                
+            }
+            
+            #overlay {
+    display:none;    
+    position:fixed;  
+    left:0px;        
+    top:0px;         
+    width:100%;      
+    height:100%;     
+    background:#000; 
+    opacity:0.5;     
+    z-index:99999;   
+}
+
+#popup {
+    display:none;
+    position:fixed;
+    right: 0%;        
+    top:10%;         
+    width:300px;     
+    height:100%;
+    margin-top:-75px;
+    margin-left:-150px;
+    background:#000000;
+    border:2px solid #000;
+    z-index:100000;      
+}
+        </style>
+        <script>
+                        function diffImage(img) 
+{
+    
+   if(img.src.match("images/open.jpg")) img.src = "images/close.jpg";
+   else img.src = "images/open.jpg";
+}
+
+  window.onload = function() {
+  document.getElementById("image1").onclick = function(){
+        var overlay = document.getElementById("overlay");
+        var popup = document.getElementById("popup");
+        overlay.style.display = "block";
+        popup.style.display = "block";
+    };
+    
+  document.getElementById("image2").onclick = function(){
+        var overlay = document.getElementById("overlay");
+        var popup = document.getElementById("popup");
+        overlay.style.display = "none";
+        popup.style.display = "none";      
+  };
+  };
+      </script>
+                </head>
+    <body style="margin: 0px; ">
+        
+        <div id="overlay"></div>
+<div id="popup">
+            &nbsp;    
+    
+    <img src="images/close.jpg" style="width: 80px;height: 60px; float:right; margin-top:10px;" id="image2"  />
+    <div>
+        &nbsp;
+        
+    </div>
+            <ul style="color: white; padding-left: 30%;list-style: none; float: left;">
+        <li> <label >I Am A Pro</label></li>
+        <li> <label >Hire A Pro</label></li>
+        <li> <label >About Us</label></li>
+                            
+                </ul>
+    
+</div>
+         <div class="logoAT">
+            &nbsp; 
+            <img src="http://www.pronear.co/piyush/open.jpg" style="width: 80px;height: 60px; float:right;" id="image1"  />
+         </div>
+        
+        <div style=" padding-left:  10%; padding-right: 40%;">
+            <table><tr><td>
+            <div  style=" padding: 5%; background-color: gray; color: white; border-radius:25px; ">
+            <h1>Hello Pro, Welcome to ProNear.</h1>
+        <h3> You are just 1 step away from achieving your dreams using ProNear</h3>
+        <form name="htmlform" method="post" action="html_form_send.php">
+<table width="450px">
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input type="text" name="first_name" maxlength="50" size="30"/> 
+ </td>
+</tr>
+ 
+<tr>
+ <td valign="top"">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input type="text" name="last_name" maxlength="50" size="30"/>
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input type="text" name="email" maxlength="80" size="30"/>
+ </td>
+ 
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number</label>
+ </td>
+ <td valign="top">
+  <input type="text" name="telephone" maxlength="30" size="30"/>
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Specialization 1 *</label>
+ </td>
+ <td valign="top">
+      <textarea name="comments" maxlength="1000" cols="25" rows="6" 
+                placeholder="Please enter the description of services you provide or the skills in which you are expert."></textarea>
+ </td>
+ 
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="telephone">Price *</label>
+ </td>
+ <td valign="top">
+      <input type="text" name="telephone" maxlength="30" size="30" placeholder="Your cost of service"/>
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Specialization 2 *</label>
+ </td>
+ <td valign="top">
+      <textarea name="comments" maxlength="1000" cols="25" rows="6" 
+                placeholder="Please enter the description of services you provide or the skills in which you are expert."></textarea>
+ </td>
+ 
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="telephone">Price *</label>
+ </td>
+ <td valign="top">
+      <input type="text" name="telephone" maxlength="30" size="30" placeholder="Your cost of service"/>
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Specialization 3 *</label>
+ </td>
+ <td valign="top">
+      <textarea name="comments" maxlength="1000" cols="25" rows="6" 
+                placeholder="Please enter the description of services you provide or the skills in which you are expert."></textarea>
+ </td>
+ 
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="telephone">Price *</label>
+ </td>
+ <td valign="top">
+      <input type="text" name="telephone" maxlength="30" size="30" placeholder="Your cost of service"/>
+ </td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="comments">Specialization 4 *</label>
+ </td>
+ <td valign="top">
+      <textarea name="comments" maxlength="1000" cols="25" rows="6" 
+                placeholder="Please enter the description of services you provide or the skills in which you are expert."></textarea>
+ </td>
+ 
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="telephone">Price *</label>
+ </td>
+ <td valign="top">
+      <input type="text" name="telephone" maxlength="30" size="30" placeholder="Your cost of service"/>
+ </td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="comments">Specialization 5 *</label>
+ </td>
+ <td valign="top">
+      <textarea name="comments" maxlength="1000" cols="25" rows="6" 
+                placeholder="Please enter the description of services you provide or the skills in which you are expert."></textarea>
+ </td>
+ 
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="telephone">Price *</label>
+ </td>
+ <td valign="top">
+      <input type="text" name="telephone" maxlength="30" size="30" placeholder="Your cost of service"/>
+ </td>
+</tr>
+<tr>
+ <td   <input type="submit" value="Submit"/>   
+ </td>
+</tr>
+</table>
+</form>
+        
+        <button onclick="window.location = 'http://www.pronear.co/Home.html'">Home Page</button>
+        </div>
+                        </td>
+                    <td >
+            <div style=" margin-left: 20%;  background-color: gray; border-radius: 25px; " >
+                
+                <div style="width: 500px;height: 300px; margin-left:25%;   padding-top: 5%;">
+                <h2 style=" color: white;"> Job Card Preview </h2>    
+                <div style="background-color: orange; width: 210px; height: 150px;">
+                    <img style="margin-left: 10%;" src="http://www.pronear.co/piyush/PRONEAR.png" height="100" width="150" alt=""/>
+                    
+                </div>
+                </div>
+            </div>
+                </td></tr></table>
+    </div>
+        <div>
+                &emsp;
+            </div>
+                <div class="footer1">
+            <div>
+                &emsp;
+            </div>
+                <div style="margin-left: 33%;">
+                <img align="top" src="piyush/Facebook-Icon.png" height="43" width="42" alt="" />
+                &emsp;
+                <img  src="piyush/linkedin.png" height="35" width="35" alt=""/>
+                &emsp;
+                <img src="piyush/twitter-logo-1024x1024.png" height="35" width="35" alt=""/>
+                &emsp;
+                <img src="piyush/Pinterest1.png" height="35" width="35" alt=""/>
+                <img src="piyush/snapchat-logo-141-1.png" height="38" width="67" alt=""/>
+                <img src="piyush/instagram_app_large_may2016.png" height="35" width="35" alt=""/>
+                &emsp;
+                <img src="piyush/1468318161_youtube-256.png" height="40" width="40" alt=""/>
+
+            </div>
+            <div>
+                &emsp;
+            </div>
+        </div>
+        <div class="footer">
+
+            <div>    
+                <ul  style="margin-left: 4%; list-style: none; float: left;">
+                    <li > <label >I am a Pro</label></li>
+                    <li>Create a Profile</li>
+                    <li>Get Hired</li>
+                    <li>Edit Profile</li>
+                </ul>
+
+                <ul style="padding-left: 31%;list-style: none; float: left;">
+                    <li> <label >Hire a Pro</label></li>
+                    <li><label >Find a Pro</label></li>
+                    <li><label >Available Pros</label></li>
+                    <li>My Projects</li>
+                </ul>
+
+                <ul style="padding-left: 30%;list-style: none; float: left;">
+                    <li> <label >About Us</label></li>
+                    <li><label >Our Story</label></li>
+                    <li><label >Team</label></li>
+                    <li>Jobs</li>        
+                </ul>
+
+            </div> 
+
+
+            <div style="text-align: center;">
+                <a href="default.asp">
+                    <img src="images/logo-app_store.png" alt="HTML tutorial" style="width:200px;height:50px;border:0;"></a>    
+
+                <!--<button class="buttonApple"  onclick="window.location = '../HirePro/CustomerSignUp.jsp'"></button>-->
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <a href="default.asp">
+                    <img src="images/GooglePlayBadge.png" alt="HTML tutorial" style="width:200px;height:50px;border:0;">
+                </a>            </div>
+            <div>
+                &emsp;
+            </div>
+            
+            <div>
+                <label style="margin-left: 4%">  © 2016 ProNear Inc.</label> <label style="float:right;margin-right: 4%;">  Privacy Policy Terms & Conditions</label>     
+            </div>
+            <div>
+                &emsp;
+            </div>
+        </div>
+        </body>
+</html>
