@@ -1,13 +1,11 @@
-$(document).ready(function() {
-		$(document).delegate('.open', 'click', function(event){
-			$(this).toggleClass('oppenned');
-			event.stopPropagation();
-		})
-		$(document).delegate('body', 'click', function(event) {
-			$('.open').removeClass('oppenned');
-		})
-		$(document).delegate('.cls', 'click', function(event){
-			$('.open').removeClass('oppenned');
-			event.stopPropagation();
-                	});
-                });
+var  mn = $(".sec-nav");
+    mns = "sec-nav-scrolled";
+    hdr = $('#pronear_logo').offset().top;
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > (hdr + 5) && screen.width < 500) {
+    mn.addClass(mns);
+  } else {
+    mn.removeClass(mns);
+  }
+});
